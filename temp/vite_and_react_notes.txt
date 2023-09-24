@@ -1,0 +1,17 @@
+Vite/React:
+    Getting started:
+        FIRST - cd to repos (not repo name folder whether pre-existing or not)
+        npm create vite@latest
+        select a project name of your choice (overlay 'vite-project')
+            (I used "my-portfolio" to match repo name)
+        Arrow down to select "React" from rainbow-color list
+        Arrow down to select "JavaScript" from the four options displayed in blue and yellow
+
+        (If repo was pre-created then you will have no choice but to opt for deletion of previous
+        repo contents.  In which case (hopefully) they can be restored from github(?).)
+
+        Done. Now run:
+
+  cd my-portfolio
+  npm install
+  npm run dev
