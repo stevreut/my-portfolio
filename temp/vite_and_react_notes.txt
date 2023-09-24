@@ -10,8 +10,14 @@ Vite/React:
         (If repo was pre-created then you will have no choice but to opt for deletion of previous
         repo contents.  In which case (hopefully) they can be restored from github(?).)
 
-        Done. Now run:
+        You will then be instructed as follows:
 
-  cd my-portfolio
-  npm install
-  npm run dev
+            Done. Now run:
+
+                cd my-portfolio
+                npm install
+                npm run dev
+
+        The last command should cause a skeleton REACT app to run in the localhost and the
+        URL for accessing will appear.  Bring up in live server to confirm.
+        
