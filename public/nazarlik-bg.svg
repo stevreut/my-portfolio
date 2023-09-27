@@ -1,0 +1,9 @@
+<svg width="2000" height="3000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect cx="0" c7="0" width="2000" height="3000" fill="#8c8c8c" />
+  <circle cx="1575" cy="1500" r="1350" transform="rotate(30,1500,1500)" fill="#73737a" />
+  <circle cx="1500" cy="1500" r="1350" fill="#747389" />
+  <circle cx="1500" cy="1500" r="750" fill="#8b8b8b" />
+  <circle cx="1500" cy="1500" r="495" fill="#828b8b" />
+  <circle cx="1500" cy="1500" r="165" fill="#737373" />
+  <ellipse cx="262.5" cy="1500" rx="52.5" ry="300" transform="rotate(30,1500,1500)" fill="#89898c" />
+</svg>
