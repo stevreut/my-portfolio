@@ -48,6 +48,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("/nazarlik-bg.svg");
+  background-size: 100%;
 }
 
 header {
