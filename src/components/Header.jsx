@@ -6,8 +6,8 @@ import Navbar from './Navbar';
 // TODO : About Me, Portfolio, Contact, and Resume - required links per assignment README
 // TODO
 
-export default function Nav() {
-    // The Navbar component will render each of the Link elements in the links prop
+export default function Header() {
+
     const currentPagePath = useLocation().pathname;
     const dormantPage = "nav-link text-light";
     const activePage = dormantPage + " active";
