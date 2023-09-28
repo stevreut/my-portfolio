@@ -3,15 +3,41 @@ import { useState } from 'react';
 
 export default function ContactForm() {
   // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [submitIsValid, setSubmitIsValid] = useState(false);
+  const [warnContent, setWarnContent] = useState('');
+  const [contactName, setContactName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
-
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
+    console.log('name=',name);
+    console.log('value=',value);
+    if (name === 'contact-name') {
+      console.log('setting contact');
+      setContactName(value);
+    } else if (name === 'email') {
+      console.log('setting email');
+      setEmail(value);
+    } else if (name === 'message') {
+      console.log('setting message');
+      setMessage(value);
+    }
+    setSubmitIsValid(false);
+    if (!contactName) {
+      console.log('name blank');
+      setWarnContent("Name must not be blank");
+    } else if (!email) {
+      console.log('email blank');
+      setWarnContent("Email must not be blank");
+    } else if (!message) {
+      setWarnContent("Message must not be blank");
+    } else if (!email.match(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)) {
+      setWarnContent("Invalid email");
+    } else {
+      setWarnContent("");
+      setSubmitIsValid(true);
+    }
   };
 
   const handleFormSubmit = (e) => {
@@ -19,35 +45,41 @@ export default function ContactForm() {
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    alert(`from form: name: ${contactName}, email: ${email}, message: ${message}`);
   };
 
   return (
-    <div className="container text-center">
-      <h1>
-        Hello {firstName} {lastName}
-      </h1>
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={firstName}
-          name="firstName"
+      <form className="contact-form" onSubmit={handleFormSubmit}>
+        <p>Name:</p>
+        <p><input
+          value={contactName}  // TODO
+          name="contact-name"
           onChange={handleInputChange}
           type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={lastName}
-          name="lastName"
+          placeholder="Name"
+        /></p>
+        <p>email:</p>
+        <p><input
+          value={email}  // TODO
+          name="email"
           onChange={handleInputChange}
           type="text"
           placeholder="Last Name"
+        /></p>
+        <p>Message:</p>
+        <p><textarea 
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          rows={10}
+          cols={40}
         />
-        <button type="submit">
+        </p>
+        <p>{warnContent}</p> 
+        <p>
+        <button type="submit" disabled={!submitIsValid}>
           Submit
-        </button>
+        </button></p>
       </form>
-    </div>
   );
 }

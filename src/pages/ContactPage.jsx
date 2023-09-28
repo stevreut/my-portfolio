@@ -11,7 +11,7 @@ export default function ContactPage() {
           impedit suscipit sed magnam alias in, repellat expedita hic explicabo
         </p>
 
-        <p><ContactForm /></p>
+        <ContactForm />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
