@@ -108,6 +108,16 @@ h1 {
   color: rgb(0, 157, 255);
 }
 
+.resume-group {
+  text-decoration: underline;
+}
+
+dl dt {
+  margin: 5px 0px 0px 0px;
+  font-weight: bold;
+  font-style: italic;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

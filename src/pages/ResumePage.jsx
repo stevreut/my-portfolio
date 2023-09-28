@@ -1,66 +1,39 @@
 // This is a static page mocking an "About Us" section for our fake user data
 export default function ResumePage() {
     return (
-      <div className="container pt-4">
+      <div>
         <h2>Resum&eacute;</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
-        <section className="features-icons bg-light text-center m-4">
-          <div className="container">
-            <div className="row p-2">
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-window m-auto text-primary" />
-                  </div>
-                  <h3>Fully Responsive</h3>
-                  <p className="lead mb-0">
-                    This theme will look great on any device, no matter the size!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-layers m-auto text-primary" />
-                  </div>
-                  <h3>Bootstrap 5 Ready</h3>
-                  <p className="lead mb-0">
-                    Featuring the latest build of the new Bootstrap 5 framework!
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="features-icons-item mx-auto mb-0 mb-lg-3">
-                  <div className="features-icons-icon d-flex">
-                    <i className="bi-terminal m-auto text-primary" />
-                  </div>
-                  <h3>Easy to Use</h3>
-                  <p className="lead mb-0">
-                    Ready to use with your own content, or customize the source
-                    files!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <section>
+          <h3 className="resume-group">Experience</h3>
+          <dl>
+            <dt>Wells Fargo Bank (Philadelphia, PA)</dt>
+            <dt>(Wachovia, First Union, CoreStates)</dt>
+              <dd>Software development for one of the world's leading systems for processing
+                international wire payments.  Extensive experience on the HP NonStop ("Tandem") 
+                platform that supported this processing - a home-grown system highly customized
+                to support the evolving needs of the commercial customers it served.
+              </dd>
+            <dt>Germantown Savings Bank (Bala-Cynwyd, PA)</dt>
+              <dd>Software development (IBM mainframe - COBOL, JCL, etc.) for a mid-sized regional
+                bank which was a local technology leader in the industry.
+              </dd>
+            <dt>Municipal Code Corporation (Tallahassee, FL)</dt>
+              <dd></dd>
+          </dl>
         </section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-          impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-          architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-          mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-          nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
+        <section>
+          <h3 className="resume-group">Education</h3>
+          <dl>
+          <dt>University of Pennsylvania Full-Stack Coding Boot Camp (Philadelphia, PA)</dt>
+            <dd>An intensive training program on web development across the full spectrum of
+              technologies from those supporting front-end internet users to back-end 
+              database concerns</dd>
+          <dt>Florida State Univerity (Tallahassee, FL)</dt>
+            <dd>Studies concentrated in [applied] Mathematics with work toward a minor in Computer Science</dd>
+          <dt>Brevard Community College (Cocoa, FL)</dt>
+            <dd>Associate of Arts - Mathematics</dd>
+        </dl>
+        </section>
       </div>
     );
   }

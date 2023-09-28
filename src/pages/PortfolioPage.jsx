@@ -5,6 +5,7 @@ export default function PortfolioPage() {
     return (
       <div className="container pt-4">
         <h2>Portfolio Page</h2>
+        <h3>Some of my recent work - a collection which I hope will grow and continue to improve in quality in the months to come</h3>
         <div className="projects-container">
           <Project key={1} repo="just-another-text-editor" desc="Demonstration minimal text editor based on PWA technology" />
           <Project key={2} repo="svg-maker" desc="Tool to enable persisted storage of notes on a server" />
