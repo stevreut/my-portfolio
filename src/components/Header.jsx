@@ -15,7 +15,7 @@ export default function Header() {
     return (
         <header>
             <img src="/nazarlik.svg" width="75px" height="75px"></img>
-            <h1>Steve Reuterskiold</h1>
+            <h1>Stephen Reuterskiold</h1>
         <Navbar
             links={[
                 <Link key={1} className={currentPagePath === "/" ? activePage : dormantPage} to="/">
