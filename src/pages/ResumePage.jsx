@@ -2,7 +2,7 @@
 export default function ResumePage() {
     return (
       <div className="container pt-4">
-        <h3>Resum&eacute; - TODO</h3>
+        <h2>Resum&eacute;</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
           tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
