@@ -4,8 +4,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #26262dde;
   background-color: #242424;
 
   font-synthesis: none;
@@ -86,25 +85,18 @@ h1 {
 .projects-container {
   margin:15px;
   padding:5px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: lime;
-  border-radius:50px;
-  background-color: palegreen;  /* TODO */
-  color: olive; /* TODO */
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  /* TODO */
-}
+  border-radius: 15px;
+  background-color: #c8cee4;  /* TODO */
+ }
 
 .one-project {
-  background-color: ivory;
-  padding:20px;
-  margin:30px;
-  border-style: solid;
-  border-radius:30px;
+  background-color: white;
+  padding:10px 30px 20px 10px;
+  margin:20px;
+  border-radius:15px;
 }
 
 .one-project a {
-  color: red;
   font-weight:bolder;
 }
 
@@ -136,6 +128,7 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  color: #9b9dd1;
   background-color: #464d61;
   padding: 10px;
   margin: 20px;
