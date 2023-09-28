@@ -6,8 +6,8 @@ export default function Project(props) {
     let fullUrl = baseUrl+props.repo;
     return (
         <div className="one-project">
-            <p>{props.desc}</p>
-            <p><Link to={fullUrl} target="_blank" rel="noopener noreferrer" >{props.repo}</Link></p>
+            <h2>{props.desc}</h2>
+            <p>repository: <Link to={fullUrl} target="_blank" rel="noopener noreferrer" >{props.repo}</Link></p>
         </div>
     );
   }
