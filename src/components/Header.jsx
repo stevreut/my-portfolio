@@ -1,10 +1,5 @@
-// Bringing in the required import from 'react-router-dom'
 import { Link, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
-
-// TODO
-// TODO : About Me, Portfolio, Contact, and Resume - required links per assignment README
-// TODO
 
 export default function Header() {
 

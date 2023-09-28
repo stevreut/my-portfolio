@@ -2,8 +2,8 @@
 export default function AboutPage() {
     return (
       <div className="container pt-4">
-        <h3>About Me  - TODO</h3>
-        <p><img src="/sr-wheeler-pk-trimmed.jpg" /></p>
+        <h2>About Me</h2>
+          <div className="prof-img-div"><img src="/sr-wheeler-pk-trimmed.jpg" className="profile-img" /></div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
           tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis

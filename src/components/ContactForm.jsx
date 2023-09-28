@@ -1,8 +1,6 @@
 import { useState } from 'react';
-// import './style.css';
 
 export default function ContactForm() {
-  // Here we set two state variables for firstName and lastName using `useState`
   const [submitIsValid, setSubmitIsValid] = useState(false);
   const [warnContent, setWarnContent] = useState('');
   const [contactName, setContactName] = useState('');
@@ -44,15 +42,14 @@ export default function ContactForm() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // Alert the user their first and last name, clear the inputs
-    alert(`from form: name: ${contactName}, email: ${email}, message: ${message}`);
+    alert('Sorry! Contact storage is not working at this time.');
   };
 
   return (
       <form className="contact-form" onSubmit={handleFormSubmit}>
         <p>Name:</p>
         <p><input
-          value={contactName}  // TODO
+          value={contactName}
           name="contact-name"
           onChange={handleInputChange}
           type="text"
@@ -60,7 +57,7 @@ export default function ContactForm() {
         /></p>
         <p>email:</p>
         <p><input
-          value={email}  // TODO
+          value={email}
           name="email"
           onChange={handleInputChange}
           type="text"

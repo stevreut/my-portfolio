@@ -32,14 +32,14 @@ a:hover {
 
 .nav-link {
   font-weight: 500;
-  color: #64669b;
+  color: #9b9dd1;
   text-decoration: inherit;
   margin: 10px;
 }
 
 .active {
   font-weight: 800;
-  color: #be277d;
+  color: #d7d9ff;
   text-decoration: inherit;
 }
 
@@ -53,12 +53,17 @@ body {
   background-size: 100%;
 }
 
+main {
+  margin: 20px;
+}
+
 header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   background-color: #464d61;
+  margin: 30px 0px 20px 0px;
 }
 
 header img {
@@ -66,9 +71,16 @@ header img {
 }
 
 h1 {
+  color: #989cfe;
   font-size: 2.7em;
   line-height: 1.1;
   margin: 20px;
+}
+
+.profile-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+  float: right;
 }
 
 .projects-container {
@@ -117,6 +129,16 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #464d61;
+  padding: 10px;
+  margin: 20px;
 }
 
 @media (prefers-color-scheme: light) {
